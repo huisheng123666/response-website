@@ -1,4 +1,5 @@
 import { MainLeft } from "./left"
+import { MainRight } from "./main-right"
 import { MainMiddle } from "./middle"
 import { MainWrap } from "./style"
 
@@ -9,8 +10,7 @@ export const Main = () => {
 
             <MainMiddle/>
 
-            <div className="right">
-            </div>
+            <MainRight/>
         </div>
     </MainWrap>
 }

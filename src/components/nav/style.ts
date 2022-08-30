@@ -12,24 +12,14 @@ z-index: 10;
     align-items: center;
     justify-content: space-between;
 }
-.search-bar {
-    background: var(--color-light);
-    border-radius: var(--border-radius);
-    padding: var(--search-padding);
-    input[type="search"] {
-        background: transparent;
-        width: 30vw;
-        margin-left: 1rem;
-        font-size: 0.9rem;
-        color: var(--color-dark);
-        &::placeholder {
-            color: var(--color-gray);
-        }
-    }
-}
 .create {
     display: flex;
     align-items: center;
     gap: 2rem;
+}
+@media screen and (max-width: 992px) {
+    .search-bar {
+        display: none;
+    }
 }
 `
