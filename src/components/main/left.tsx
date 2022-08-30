@@ -2,13 +2,17 @@ import { NotificationPopup } from "./notification-popup"
 import profile from '@/assets/profile-1.jpg'
 import { MainLeftWrap } from "./style"
 import { useCallback, useState } from "react"
+import { useAppContext } from "@/context"
 
 export const MainLeft = () => {
     const [showPopup, setShowPopUp] = useState(false)
     const [active, setActive] = useState('Home')
 
+    const { setShowCustomTheme } = useAppContext()
+
     const clickMenu = useCallback((type: string) => {
         setActive(type)
+        setShowCustomTheme(type === 'Theme')
         setShowPopUp(type === 'Notifications')
     }, [])
 

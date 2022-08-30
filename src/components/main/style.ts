@@ -66,11 +66,11 @@ top: var(--sticky-top-left);
                 background: var(--color-primary);
             }
         }
-        &:first-of-type.active {
+        &:first-child {
             border-top-left-radius: var(--card-border-radius);
             overflow: hidden;
         }
-        &:last-child.active {
+        &:last-child {
             border-bottom-left-radius: var(--card-border-radius);
             overflow: hidden;
         }

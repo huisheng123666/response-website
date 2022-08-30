@@ -17,6 +17,10 @@ font-size: 0.9rem;
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
+    @media screen and (max-width: 992px) {
+        width: 92vw;
+    }
     .font-size {
         margin-top: 5rem;
         &>div {
@@ -91,6 +95,9 @@ font-size: 0.9rem;
             align-items: center;
             justify-content: space-between;
             gap: 1.5rem;
+            @media screen and (max-width: 992px) {
+                flex-wrap: wrap;
+            }
             &>div {
                 padding: var(--card-padding);
                 width: 100%;

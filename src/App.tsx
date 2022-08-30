@@ -2,15 +2,16 @@ import { useState } from "react"
 import { CustomTheme } from "./components/custom-theme/custom-theme"
 import { Main } from "./components/main/main"
 import { Nav } from "./components/nav/nav"
+import { useAppContext } from "./context"
 
 function App() {
-  const [showTheme, setShowheme] = useState(false)
+  const { showCustomTheme } = useAppContext()
 
   return (
     <div className="App">
       <Nav/>
       <Main/>
-      {showTheme ? <CustomTheme/> : null}
+      {showCustomTheme ? <CustomTheme/> : null}
     </div>
   )
 }
